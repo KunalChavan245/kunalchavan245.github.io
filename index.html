@@ -4,9 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <link rel="icon" href="assets/images/logo.ico" type="image/x-icon">
-  <title>Kunal Chavan | AI Portfolio</title>
+  <title>Kunal Chavan | Portfolio</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
+
 <body class="bg-black text-white dark:bg-black dark:text-white transition-colors duration-300 font-sans">
 
   <!-- Navbar -->
@@ -14,15 +15,19 @@
     <h1 class="text-2xl font-bold">
       <a href="index.html" class="hover:text-yellow-400 transition-transform duration-300 hover:scale-105">Kunal Chavan</a>
     </h1>
+
+    <!-- Desktop Nav -->
     <ul class="hidden md:flex space-x-8 text-sm uppercase font-semibold">
       <li><a href="main-sections/about.html" class="hover:text-yellow-400">About</a></li>
-      <li><a href="main-sections/projects.html" class="hover:text-yellow-400">Projects</a></li>
+      <li><a href="main-sections/project.html" class="hover:text-yellow-400">Projects</a></li>
       <li><a href="main-sections/skills.html" class="hover:text-yellow-400">Skills</a></li>
-      <li><a href="main-sections/achievements.html" class="hover:text-yellow-400">Achievements</a></li>
-      <li><a href="main-sections/certifications.html" class="hover:text-yellow-400">Certifications</a></li>
+      <li><a href="main-sections/research.html" class="hover:text-yellow-400">Research</a></li>
+      <li><a href="main-sections/certification.html" class="hover:text-yellow-400">Certifications</a></li>
       <li><a href="main-sections/blog.html" class="hover:text-yellow-400">Blog</a></li>
-      <li><a href="main-sections/contact-me.html" class="hover:text-yellow-400">Contact</a></li>
+      <li><a href="main-sections/contact.html" class="hover:text-yellow-400">Contact</a></li>
     </ul>
+
+    <!-- Mobile Hamburger -->
     <div class="md:hidden">
       <button id="menu-btn" class="text-yellow-400 text-3xl">&#9776;</button>
     </div>
@@ -32,96 +37,95 @@
   <div id="mobile-menu" class="hidden fixed inset-0 bg-black bg-opacity-95 z-50 p-10 flex flex-col space-y-6 text-lg font-semibold text-center">
     <button id="close-menu" class="text-yellow-400 text-3xl absolute top-5 right-6">&times;</button>
     <a href="main-sections/about.html" class="hover:text-yellow-400">About</a>
-    <a href="main-sections/projects.html" class="hover:text-yellow-400">Projects</a>
+    <a href="main-sections/project.html" class="hover:text-yellow-400">Projects</a>
     <a href="main-sections/skills.html" class="hover:text-yellow-400">Skills</a>
-    <a href="main-sections/achievements.html" class="hover:text-yellow-400">Achievements</a>
-    <a href="main-sections/certifications.html" class="hover:text-yellow-400">Certifications</a>
+    <a href="main-sections/research.html" class="hover:text-yellow-400">Research</a>
+    <a href="main-sections/certification.html" class="hover:text-yellow-400">Certifications</a>
     <a href="main-sections/blog.html" class="hover:text-yellow-400">Blog</a>
-    <a href="main-sections/contact-me.html" class="hover:text-yellow-400">Contact</a>
+    <a href="main-sections/contact.html" class="hover:text-yellow-400">Contact</a>
   </div>
 
   <!-- Landing Section -->
   <section class="flex flex-col md:flex-row items-center justify-between px-6 md:px-16 py-20">
-    <div class="w-full md:w-7/12 lg:w-2/3 xl:w-3/4 leading-loose text-lg md:text-xl space-y-6">
-      <h2 class="text-5xl md:text-6xl font-extrabold mb-6 leading-relaxed">
-        I don't just deploy AI<br> I bring ideas to life.
-      </h2>
-      <p class="text-xl text-gray-300 mb-8">
-        Research Intern @ NUS, IIT Dharwad | ECE @ VIT | Computer Vision | IoT | LLM | Cloud
-      </p>
-      <div class="space-x-4 text-lg">
-        <a href="main-sections/projects.html" class="bg-yellow-400 hover:bg-yellow-300 text-black px-6 py-3 rounded-full font-semibold transition duration-300 transform hover:scale-110 shadow-lg">
-          View Projects
-        </a>
-        <a href="main-sections/contact-me.html" class="border border-yellow-400 text-yellow-500 hover:bg-yellow-500 hover:text-black px-6 py-3 rounded-full font-semibold transition duration-300 transform hover:scale-110 shadow-lg">
-          Let's Connect
-        </a>
+    <!-- Text -->
+    <div class="w-full md:w-7/12 leading-loose text-lg space-y-6">
+      <h2 class="text-5xl font-extrabold">I build intelligent systems<br> to solve real-world problems.</h2>
+      <p class="text-xl text-gray-300">AI Researcher | Computer Vision & IoT Enthusiast | M.L. Engineer</p>
+      <div class="space-x-4">
+        <a href="main-sections/project.html" class="bg-yellow-400 hover:bg-yellow-300 text-black px-6 py-3 rounded-full font-semibold transition transform hover:scale-110 shadow-lg">View Projects</a>
+        <a href="main-sections/contact.html" class="border border-yellow-400 text-yellow-400 hover:bg-yellow-500 hover:text-black px-6 py-3 rounded-full font-semibold transition transform hover:scale-110 shadow-lg">Let's Connect</a>
       </div>
-      <div class="flex flex-col md:flex-row md:items-center space-y-4 md:space-y-0 md:space-x-8 mt-8 text-lg md:text-2xl">
+      <div class="flex flex-wrap gap-6 mt-6 text-lg">
         <a href="https://www.linkedin.com/in/kunal-chavan-008524250/" target="_blank" class="hover:text-yellow-400">🔗 LinkedIn</a>
         <a href="https://github.com/KunalChavan245" target="_blank" class="hover:text-yellow-400">💻 GitHub</a>
-        <a href="mailto:kunalchavan245@gmail.com" target="_blank" class="hover:text-yellow-400">📧 Email</a>
+        <a href="mailto:kunalchavan245@gmail.com" target="_blank" class="hover:text-yellow-400">📧 Gmail</a>
       </div>
-      <p class="mt-6 italic text-gray-400 text-lg">
-        P.S. From cloud APIs to Jetson boards—no regrets!
-      </p>
     </div>
+
+    <!-- Image -->
     <div class="mt-10 md:mt-0 md:w-1/2 flex justify-center md:justify-end">
-      <img src="assets/images.jpeg" alt="Kunal Chavan" class="w-full md:w-[40rem] h-auto max-h-[60vh] object-cover rounded-2xl shadow-xl transition duration-250 transform hover:scale-105"/>
+      <img src="assets/images.jpeg" alt="Kunal Chavan" class="w-full md:w-[40rem] max-h-[60vh] object-cover rounded-2xl shadow-xl hover:scale-105 transition duration-250">
     </div>
   </section>
 
   <!-- Scroll Arrow -->
   <div class="flex justify-center animate-bounce mb-8">
-    <a href="#about" id="scrollDown" class="text-yellow-500 text-3xl hover:scale-110 transition-transform duration-300">↓</a>
+    <a href="#explore" id="scrollDown" class="text-yellow-500 text-3xl hover:scale-110 transition-transform">↓</a>
   </div>
 
-  <!-- Cards Section -->
-  <section id="about" class="px-6 md:px-16 py-20 bg-black">
+  <!-- Section Cards -->
+  <section id="explore" class="px-6 md:px-16 py-20">
     <h2 class="text-3xl font-bold mb-8 text-center text-yellow-400">Explore My Sections</h2>
     <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-      <div class="bg-red-200 p-6 rounded-xl shadow-xl text-center text-black transform hover:scale-105 transition duration-300">
+
+      <!-- About -->
+      <div class="bg-red-200 p-6 rounded-xl text-black text-center shadow-xl hover:scale-105 transition duration-300">
         <h3 class="text-4xl font-bold">1</h3>
         <h4 class="text-xl font-bold mt-4">About Me</h4>
-        <p class="text-sm mt-4">Background, education, interests.</p>
-        <a href="main-sections/about.html" class="font-semibold mt-4 inline-block hover:underline">View Page</a>
+        <p class="text-sm mt-4">Learn about my academic background and interests.</p>
+        <a href="main-sections/about.html" class="mt-4 inline-block font-semibold hover:underline">View Page</a>
       </div>
-      <div class="bg-blue-200 p-6 rounded-xl shadow-xl text-center text-black transform hover:scale-105 transition duration-300">
+
+      <!-- Projects -->
+      <div class="bg-blue-200 p-6 rounded-xl text-black text-center shadow-xl hover:scale-105 transition duration-300">
         <h3 class="text-4xl font-bold">2</h3>
         <h4 class="text-xl font-bold mt-4">Projects</h4>
-        <p class="text-sm mt-4">Explore computer vision, IoT & LLM apps.</p>
-        <a href="main-sections/projects.html" class="font-semibold mt-4 inline-block hover:underline">View Page</a>
+        <p class="text-sm mt-4">See my AI, CV, and IoT projects.</p>
+        <a href="main-sections/project.html" class="mt-4 inline-block font-semibold hover:underline">View Page</a>
       </div>
-      <div class="bg-gray-100 p-6 rounded-xl shadow-xl text-center text-black transform hover:scale-105 transition duration-300">
+
+      <!-- Skills -->
+      <div class="bg-gray-100 p-6 rounded-xl text-black text-center shadow-xl hover:scale-105 transition duration-300">
         <h3 class="text-4xl font-bold">3</h3>
         <h4 class="text-xl font-bold mt-4">Skills</h4>
-        <p class="text-sm mt-4">ML, PyTorch, Jetson, LLM APIs.</p>
-        <a href="main-sections/skills.html" class="font-semibold mt-4 inline-block hover:underline">View Page</a>
+        <p class="text-sm mt-4">Explore the tools and tech I work with.</p>
+        <a href="main-sections/skills.html" class="mt-4 inline-block font-semibold hover:underline">View Page</a>
       </div>
-      <div class="bg-red-500 p-6 rounded-xl shadow-xl text-center text-black transform hover:scale-105 transition duration-300">
+
+      <!-- Research -->
+      <div class="bg-red-500 p-6 rounded-xl text-black text-center shadow-xl hover:scale-105 transition duration-300">
         <h3 class="text-4xl font-bold">4</h3>
-        <h4 class="text-xl font-bold mt-4">Achievements</h4>
-        <p class="text-sm mt-4">Conferences, awards, competitions.</p>
-        <a href="main-sections/achievements.html" class="font-semibold mt-4 inline-block hover:underline">View Page</a>
+        <h4 class="text-xl font-bold mt-4">Research</h4>
+        <p class="text-sm mt-4">Check out my IEEE and academic publications.</p>
+        <a href="main-sections/research.html" class="mt-4 inline-block font-semibold hover:underline">View Page</a>
       </div>
-      <div class="bg-yellow-400 p-6 rounded-xl shadow-xl text-center text-black transform hover:scale-105 transition duration-300">
+
+      <!-- Certifications -->
+      <div class="bg-yellow-400 p-6 rounded-xl text-black text-center shadow-xl hover:scale-105 transition duration-300">
         <h3 class="text-4xl font-bold">5</h3>
         <h4 class="text-xl font-bold mt-4">Certifications</h4>
-        <p class="text-sm mt-4">AWS, IBM, ML & DevOps training.</p>
-        <a href="main-sections/certifications.html" class="font-semibold mt-4 inline-block hover:underline">View Page</a>
+        <p class="text-sm mt-4">Explore my credentials and badges.</p>
+        <a href="main-sections/certification.html" class="mt-4 inline-block font-semibold hover:underline">View Page</a>
       </div>
-      <div class="bg-yellow-300 p-6 rounded-xl shadow-xl text-center text-black transform hover:scale-105 transition duration-300">
+
+      <!-- Contact -->
+      <div class="bg-yellow-600 p-6 rounded-xl text-black text-center shadow-xl hover:scale-105 transition duration-300">
         <h3 class="text-4xl font-bold">6</h3>
-        <h4 class="text-xl font-bold mt-4">Blog</h4>
-        <p class="text-sm mt-4">Tech insights, lessons, experiments.</p>
-        <a href="main-sections/blog.html" class="font-semibold mt-4 inline-block hover:underline">View Page</a>
-      </div>
-      <div class="bg-yellow-600 p-6 rounded-xl shadow-xl text-center text-black transform hover:scale-105 transition duration-300">
-        <h3 class="text-4xl font-bold">7</h3>
         <h4 class="text-xl font-bold mt-4">Contact</h4>
         <p class="text-sm mt-4">Let’s collaborate or connect!</p>
-        <a href="main-sections/contact-me.html" class="font-semibold mt-4 inline-block hover:underline">View Page</a>
+        <a href="main-sections/contact.html" class="mt-4 inline-block font-semibold hover:underline">View Page</a>
       </div>
+
     </div>
   </section>
 
