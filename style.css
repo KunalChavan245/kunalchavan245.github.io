@@ -1,0 +1,126 @@
+:root {
+  --bg: #f4f4f4;
+  --text: #333;
+  --primary: #0e2431;
+  --accent: #64ffda;
+  --card-bg: #fff;
+}
+
+body.dark {
+  --bg: #121212;
+  --text: #eee;
+  --primary: #1f1f1f;
+  --accent: #03dac6;
+  --card-bg: #1e1e1e;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  transition: background 0.3s, color 0.3s;
+}
+
+.container {
+  width: 90%;
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+}
+
+header {
+  background: var(--primary);
+  color: white;
+  text-align: center;
+  padding: 40px 0;
+  position: relative;
+}
+
+.profile-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.links a {
+  color: var(--accent);
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+h1, h2, h3 {
+  margin: 10px 0;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+footer {
+  text-align: center;
+  background: var(--primary);
+  color: white;
+  padding: 10px 0;
+  font-size: 14px;
+}
+
+#dark-mode-toggle {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  background: var(--accent);
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 6px;
+  font-size: 18px;
+}
+
+/* Fade-in animation */
+.fade-in {
+  opacity: 0;
+  transform: translateY(10px);
+  animation: fadeIn 0.8s forwards;
+}
+
+.delay-1 { animation-delay: 0.2s; }
+.delay-2 { animation-delay: 0.4s; }
+.delay-3 { animation-delay: 0.6s; }
+.delay-4 { animation-delay: 0.8s; }
+.delay-5 { animation-delay: 1s; }
+.delay-6 { animation-delay: 1.2s; }
+.delay-7 { animation-delay: 1.4s; }
+.delay-8 { animation-delay: 1.6s; }
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Gallery */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: var(--card-bg);
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
