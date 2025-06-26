@@ -1,94 +1,125 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="icon" href="assets/images/logo.ico" type="image/x-icon">
   <title>Kunal Chavan | Portfolio</title>
-  <link rel="stylesheet" href="style.css"/>
-  <script defer src="script.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
-  <header>
-    <div class="container">
-      <button id="dark-mode-toggle">🌙</button>
-      <img src="assets/profile.jpg" alt="Kunal Chavan" class="profile-img"/>
-      <h1 class="fade-in">Kunal Chavan</h1>
-      <p class="fade-in delay-1">Research & Development | AI | CV | IoT | LLM</p>
-      <div class="links fade-in delay-2">
-        <a href="mailto:kunalchavan245@gmail.com">Email</a>
-        <a href="https://www.linkedin.com/in/kunal-chavan-008524250/">LinkedIn</a>
-        <a href="https://github.com/KunalChavan245">GitHub</a>
+
+<body class="bg-black text-white dark:bg-black dark:text-white transition-colors duration-300 font-sans">
+
+  <!-- Navbar -->
+  <nav class="flex justify-between items-center px-6 md:px-16 py-4 border-b border-gray-700">
+    <h1 class="text-2xl font-bold">
+      <a href="index.html" class="hover:text-yellow-400 transition-transform duration-300 hover:scale-105">Kunal Chavan</a>
+    </h1>
+    <ul class="hidden md:flex space-x-8 text-sm uppercase font-semibold">
+      <li><a href="#about" class="hover:text-yellow-400">About</a></li>
+      <li><a href="#projects" class="hover:text-yellow-400">Projects</a></li>
+      <li><a href="#skills" class="hover:text-yellow-400">Skills</a></li>
+      <li><a href="#publications" class="hover:text-yellow-400">Publications</a></li>
+      <li><a href="#certifications" class="hover:text-yellow-400">Certifications</a></li>
+      <li><a href="#contact" class="hover:text-yellow-400">Contact</a></li>
+    </ul>
+    <div class="md:hidden">
+      <button id="menu-btn" class="text-yellow-400 text-3xl">&#9776;</button>
+    </div>
+  </nav>
+
+  <div id="mobile-menu" class="hidden fixed inset-0 bg-black bg-opacity-95 z-50 p-10 flex flex-col space-y-6 text-lg font-semibold text-center">
+    <button id="close-menu" class="text-yellow-400 text-3xl absolute top-5 right-6">&times;</button>
+    <a href="#about" class="hover:text-yellow-400">About</a>
+    <a href="#projects" class="hover:text-yellow-400">Projects</a>
+    <a href="#skills" class="hover:text-yellow-400">Skills</a>
+    <a href="#publications" class="hover:text-yellow-400">Publications</a>
+    <a href="#certifications" class="hover:text-yellow-400">Certifications</a>
+    <a href="#contact" class="hover:text-yellow-400">Contact</a>
+  </div>
+
+  <!-- Landing Section -->
+  <section class="flex flex-col md:flex-row items-center justify-between px-6 md:px-16 py-20">
+    <div class="w-full md:w-7/12 lg:w-2/3 xl:w-3/4 leading-loose text-lg md:text-xl space-y-6">
+      <h2 class="text-5xl md:text-6xl font-extrabold mb-6 leading-relaxed">
+        AI meets Edge.<br> I turn prototypes into real-world systems.
+      </h2>
+      <p class="text-xl text-gray-300 mb-8">
+        Research Intern @ NUS & IIT Dharwad | ECE @ VIT | Computer Vision | IoT | LLM | AWS
+      </p>
+      <div class="space-x-4 text-lg">
+        <a href="#projects" class="bg-yellow-400 hover:bg-yellow-300 text-black px-6 py-3 rounded-full font-semibold transition duration-300 transform hover:scale-110 shadow-lg">View Projects</a>
+        <a href="#contact" class="border border-yellow-400 text-yellow-500 hover:bg-yellow-500 hover:text-black px-6 py-3 rounded-full font-semibold transition duration-300 transform hover:scale-110 shadow-lg">Let's Connect</a>
+      </div>
+      <div class="flex flex-col md:flex-row md:items-center space-y-4 md:space-y-0 md:space-x-8 mt-8 text-lg md:text-2xl">
+        <a href="https://www.linkedin.com/in/kunal-chavan-008524250/" target="_blank" class="hover:text-yellow-400">🔗 LinkedIn</a>
+        <a href="https://github.com/KunalChavan245" target="_blank" class="hover:text-yellow-400">💻 GitHub</a>
+        <a href="mailto:kunalchavan245@gmail.com" target="_blank" class="hover:text-yellow-400">📧 Email</a>
+      </div>
+      <p class="mt-6 italic text-gray-400 text-lg">
+        P.S. From Jetson Nano to LLMs—engineering at the edge and in the cloud!
+      </p>
+    </div>
+    <div class="mt-10 md:mt-0 md:w-1/2 flex justify-center md:justify-end">
+      <img src="assets/images/profile.png" alt="Kunal Chavan" class="w-full md:w-[40rem] h-auto max-h-[60vh] object-cover rounded-2xl shadow-xl transition duration-250 transform hover:scale-105" />
+    </div>
+  </section>
+
+  <!-- Explore Sections -->
+  <section id="about" class="px-6 md:px-16 py-20 bg-black">
+    <h2 class="text-3xl font-bold mb-8 text-center text-yellow-400">Explore My Sections</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="bg-yellow-100 p-6 rounded-xl text-black text-center hover:scale-105 transition transform duration-300">
+        <h3 class="text-4xl font-bold">1</h3>
+        <h4 class="text-xl font-bold mt-4">About Me</h4>
+        <p class="text-sm mt-4">Background, interests and experience timeline.</p>
+      </div>
+      <div class="bg-blue-200 p-6 rounded-xl text-black text-center hover:scale-105 transition transform duration-300">
+        <h3 class="text-4xl font-bold">2</h3>
+        <h4 class="text-xl font-bold mt-4">My Projects</h4>
+        <p class="text-sm mt-4">Explore CV, IoT, and LLM apps I've built.</p>
+      </div>
+      <div class="bg-gray-200 p-6 rounded-xl text-black text-center hover:scale-105 transition transform duration-300">
+        <h3 class="text-4xl font-bold">3</h3>
+        <h4 class="text-xl font-bold mt-4">Skills</h4>
+        <p class="text-sm mt-4">Python, PyTorch, Jetson Nano, LLMs & more.</p>
+      </div>
+      <div class="bg-green-200 p-6 rounded-xl text-black text-center hover:scale-105 transition transform duration-300">
+        <h3 class="text-4xl font-bold">4</h3>
+        <h4 class="text-xl font-bold mt-4">Publications</h4>
+        <p class="text-sm mt-4">IEEE papers on AIoT and Vision-Language models.</p>
+      </div>
+      <div class="bg-yellow-300 p-6 rounded-xl text-black text-center hover:scale-105 transition transform duration-300">
+        <h3 class="text-4xl font-bold">5</h3>
+        <h4 class="text-xl font-bold mt-4">Certifications</h4>
+        <p class="text-sm mt-4">AWS, IBM and more professional courses.</p>
+      </div>
+      <div class="bg-yellow-500 p-6 rounded-xl text-black text-center hover:scale-105 transition transform duration-300">
+        <h3 class="text-4xl font-bold">6</h3>
+        <h4 class="text-xl font-bold mt-4">Contact</h4>
+        <p class="text-sm mt-4">Reach out for collaborations or questions.</p>
       </div>
     </div>
-  </header>
+  </section>
 
-  <main class="container">
-    <section class="fade-in delay-3">
-      <h2>Education</h2>
-      <p><strong>Vellore Institute of Technology</strong><br>
-      B.Tech in ECE | GPA: 8.20 | 2021 - 2025</p>
-    </section>
+  <div class="flex justify-center animate-bounce mb-8">
+    <a href="#about" id="scrollDown" class="text-yellow-500 text-3xl hover:scale-110 transition-transform duration-300">↓</a>
+  </div>
 
-    <section class="fade-in delay-4">
-      <h2>Experience</h2>
-      <ul>
-        <li><strong>National University of Singapore</strong> - Research Intern (Remote, 2024)</li>
-        <li><strong>IIT Dharwad</strong> - Research Intern (2024)</li>
-        <li><strong>VIT</strong> - Computer Vision Intern (2024)</li>
-        <li><strong>QuickHeal</strong> - Data Science Intern (2023)</li>
-      </ul>
-    </section>
-
-    <section class="fade-in delay-5">
-      <h2>Skills</h2>
-      <p><strong>Languages:</strong> Python, C/C++, Java, SQL<br/>
-      <strong>Frameworks:</strong> TensorFlow, PyTorch, Hugging Face, Keras, Scikit-learn<br/>
-      <strong>Tools:</strong> AWS, VSCode, Jupyter, GPT API<br/>
-      <strong>Platforms:</strong> Linux, Windows, Arduino, Jetson Nano</p>
-    </section>
-
-    <section class="fade-in delay-6">
-      <h2>Projects</h2>
-      <div class="gallery">
-        <div class="card">
-          <h3>Night Vision Object Detection</h3>
-          <p>YOLOv5-8 on Raspberry Pi for autonomous driving in low-light.</p>
-        </div>
-        <div class="card">
-          <h3>Email Generator with LLAMA-2</h3>
-          <p>Streamlit app using LLM for auto-composing emails.</p>
-        </div>
-        <div class="card">
-          <h3>Anomaly Detection in IoT</h3>
-          <p>ML pipeline for intrusion detection with 0.95 accuracy.</p>
-        </div>
-        <div class="card">
-          <h3>VocalEyes</h3>
-          <p>Object and environment awareness tool for the visually impaired.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="fade-in delay-7">
-      <h2>Publications</h2>
-      <ul>
-        <li><a href="https://ieeexplore.ieee.org/document/10823504">AIoT Night Vision (IEEE)</a></li>
-        <li><a href="https://ieeexplore.ieee.org/document/10823425">IoT Intrusion Detection (IEEE)</a></li>
-        <li><a href="https://ieeexplore.ieee.org/document/10912415">VocalEyes (IEEE)</a></li>
-      </ul>
-    </section>
-
-    <section class="fade-in delay-8">
-      <h2>Certifications</h2>
-      <ul>
-        <li>AWS Certified Cloud Practitioner</li>
-        <li>IBM Machine Learning with Python</li>
-      </ul>
-    </section>
-  </main>
-
-  <footer>
-    <p>© 2025 Kunal Chavan</p>
+  <footer class="bg-black text-white py-8 mt-16 text-center">
+    <p>&copy; 2025 Kunal Chavan. All rights reserved.</p>
   </footer>
+
+  <script>
+    document.getElementById('menu-btn').addEventListener('click', () => {
+      document.getElementById('mobile-menu').classList.remove('hidden');
+    });
+    document.getElementById('close-menu').addEventListener('click', () => {
+      document.getElementById('mobile-menu').classList.add('hidden');
+    });
+    document.getElementById('scrollDown').addEventListener('click', function () {
+      window.scrollBy({ top: window.innerHeight, behavior: 'smooth' });
+    });
+  </script>
 </body>
 </html>
